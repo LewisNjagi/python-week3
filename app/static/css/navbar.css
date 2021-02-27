@@ -1,0 +1,32 @@
+.navbar-nav a {
+  color: black;
+  margin-left: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  display: inline-block;
+  position: relative;
+}
+.navbar-nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.navbar-brand {
+  color: black;
+}
+.navbar-nav li {
+  display: table-cell;
+  position: relative;
+}
