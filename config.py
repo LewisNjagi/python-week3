@@ -2,7 +2,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    pass
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://qyunky:Lewis860@localhost/pitches'
+
 
 class ProdConfig(Config):
     '''
@@ -23,6 +24,8 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 config_options = {
 'development':DevConfig,
