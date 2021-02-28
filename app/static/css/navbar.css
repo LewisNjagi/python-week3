@@ -6,6 +6,7 @@
 
   display: inline-block;
   position: relative;
+  font-family: 'Prompt', sans-serif;
 }
 .navbar-nav a:after {
   background: none repeat scroll 0 0 transparent;
@@ -25,6 +26,10 @@
 }
 .navbar-brand {
   color: black;
+
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 40px;
 }
 .navbar-nav li {
   display: table-cell;
