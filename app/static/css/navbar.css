@@ -1,9 +1,8 @@
 .navbar-nav a {
   color: black;
-  margin-left: 10px;
+  margin-left: 0px;
   text-transform: uppercase;
   text-decoration: none;
-
   display: inline-block;
   position: relative;
   font-family: 'Prompt', sans-serif;
@@ -13,7 +12,7 @@
   bottom: 0;
   content: "";
   display: block;
-  height: 3px;
+  height: 4px;
   left: 50%;
   position: absolute;
   background: black;
