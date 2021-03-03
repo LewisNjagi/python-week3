@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+{% endblock %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block content %}
+<div class="container">
+
+    {% for comment in all_comments %}
+    <div class="card w-90 mb-3">
+        <div class="card-body">
+            <h5>{{comment.pitch.title}}</h5>
+            <p class="card-title">{{ comment.comment }}</p>
+            <p class="card-text">--- {{comment.user.username}}</p>
+        </div>
+    </div>
+    {% endfor %}
+    
+    <div class="col-md-4">
+        {{ wtf.quick_form(comment_form) }}
+        {{simplemde.load}}
+    </div>
+
+</div>
+
+{% endblock %}
