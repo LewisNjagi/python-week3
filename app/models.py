@@ -23,8 +23,8 @@ class Comment(db.Model):
 class Pitch(db.Model):
     __tablename__='pitches'
     id = db.Column(db.Integer,primary_key=True)
-    title = db.Column(db.String(255))
-    category = db.Column(db.String(255))
+    title = db.Column(db.String(255)) 
+    category = db.Column(db.String(255)) 
     pitch = db.Column(db.String(1000))
     date = db.Column(db.DateTime(250), default=datetime.utcnow)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
@@ -34,7 +34,6 @@ class Pitch(db.Model):
     def save_pitch(self):
         db.session.add(self)
         db.session.commit()
-
 
     def __repr__(self):
         return f"Pitches {self.pitch}','{self.date}')" 
