@@ -1,5 +1,5 @@
-# NEWS APP
-#### News application to list and preview news articles from various news sources, 22th Feb 2021
+# PITCHES APP
+#### Pitches is an application that allows users to use that one minute wisely., 4th March 2021
 ## Author
 #### By **Lewis Njagi**
 ## Features
