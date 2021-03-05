@@ -15,6 +15,15 @@ As a user of the website you will be able to:
       ```bash
         https://github.com/LewisNjagi/python-week3.git
       ```
+2. Move to the folder and install requirements
+      ```bash
+      cd pitch-world
+      pip install -r requirements.txt
+      ```
+3. Running the application
+      ```bash
+      python3.6 manage.py server
+      ```
 ## BDD
 | Behaviour | Input | 
 | :---------------- | :---------------: |
