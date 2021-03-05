@@ -17,7 +17,7 @@ As a user of the website you will be able to:
       ```
 ## BDD
 | Behaviour | Input | 
-| :---------------- | 
+| :---------------- | :---------------: |
 | Load the page | **On page load** | 
 | Select SignUp| **Email**,**Username**,**Password** | 
 | Select Login | **Username** and **password** |
